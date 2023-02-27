@@ -1,0 +1,23 @@
+[package]
+name = "picture_compression"
+version = "0.1.1"
+edition = "2018"
+authors = ["cloud <yun@yunkuangao.com>"]
+license = "MIT OR Apache-2.0"
+description = "this is the image compression tool"
+homepage = "https://github.com/yunkuangao/picture_compression"
+readme = "README.md"
+categories = ["multimedia::images", "compression"]
+repository = "https://github.com/yunkuangao/picture_compression"
+keywords = ["cli", "image", "compression"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+name = "picture_compression"
+path = "src/main.rs"
+bench = false
+
+[dependencies]
+image = "0.24.5"
+structopt = { version = "0.3", default-features = false }
